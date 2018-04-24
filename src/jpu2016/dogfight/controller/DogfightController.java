@@ -8,6 +8,7 @@ public class DogfightController implements IOrderPerformer {
 
 	public DogfightController(IDogfightModel dogfightModel) {
 		this.dogfightModel = dogfightModel;
+		
 	}
 
 	@Override
