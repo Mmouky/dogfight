@@ -7,22 +7,20 @@ import jpu2016.dogfight.gameframe.IEventPerformer;
 
 import java.awt.event.KeyEvent;
 
-public class EventPerformer extends UserOrder implements IEventPerformer {
+public class EventPerformer implements IEventPerformer {
 
-    public EventPerformer(IOrderPerformer iOrderPerformer) {
+	private IOrderPerformer orderPerformer;
 
-    }
+	public EventPerformer(IOrderPerformer iOrderPerformer) {
+		this.orderPerformer = iOrderPerformer;
+	}
 
-    public void eventPerformer(KeyEvent keyEvent){
+	public void eventPerform(KeyEvent keyCode) {
+		
+	}
 
-    }
+	private UserOrder keyCodeToUseOrder(int keyCode) {
+		return new UserOrder();
+	}
 
-    public UserOrder keyCodeToUseOrder(int KeyCode){
-        return null;
-    }
-
-    @Override
-    public void eventPerform(KeyEvent keyCode) {
-
-    }
 }
