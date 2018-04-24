@@ -1,9 +1,10 @@
 package jpu2016.dogfight.gameframe;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.util.Observable;
 
-public class GameFrame {
+public class GameFrame extends JFrame {
 
     public GameFrame(String title, IEventPerformer performer, IGraphicsBuilder graphicsBuilder, Observable observable){
 

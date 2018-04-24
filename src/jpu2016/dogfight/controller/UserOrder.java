@@ -10,6 +10,9 @@ public class UserOrder implements IUserOrder{
 		this.order = order;
 	}
 
+	public UserOrder() {
+	}
+
 	@Override
 	public Order getOrder() {
 		return null;
