@@ -6,7 +6,16 @@ public class Plane extends mobile{
 	static private  int HEIGHT = 30;
 	static private  int PLAYER ;
 	
-	boolean hit() {
+	public Plane(int PLAYER,Direction direction, String Image, Position position) {
+		// TODO Auto-generated constructor stub
+		
+	}
+	public boolean isPlayer(){
+		return false;
+		
+	}
+	
+	public boolean hit() {
 		return false;
 	}
 }
