@@ -1,4 +1,4 @@
 package jpu2016.dogfight.view;
 
-public class IViewSystem {
+public interface IViewSystem {
 }
