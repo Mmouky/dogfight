@@ -6,27 +6,28 @@ import jpu2016.dogfight.model.IDogFightModel;
 
 import java.util.Observable;
 
-public class DogfightView extends Observable implements Runnable {
+public class DogfightView extends Observable implements Runnable,IViewSystem {
 
-    EventPerformer eventPerformer = new EventPerformer(iOrderPerformer);
-    GraphicsBuilder graphicsBuilder = new GraphicsBuilder(iDogFightModel);
-    GameFrame gameFrame = new GameFrame("DogFight", eventPerformer, graphicsBuilder, observable);
+	EventPerformer eventPerformer;
+	GraphicsBuilder graphicsBuilder;
+	private GameFrame gameFrame;
 
-    public String displayMessage(String message) {
-        return null;
-    }
+	public String displayMessage(String message) {
+		return null;
+	}
 
+	public DogfightView(IOrderPerformer iOrderPerformer, IDogFightModel iDogFightModel, Observable observable) {
+		this.gameFrame = new GameFrame("DogFight", eventPerformer, graphicsBuilder, observable);
+		this.eventPerformer = new EventPerformer(iOrderPerformer);
+		this.graphicsBuilder = new GraphicsBuilder(iDogFightModel);
+	}
 
-    public DogfightView(IOrderPerformer iOrderPerformer, IDogFightModel iDogFightModel, Observable observable){
+	public void run() {
 
-    }
+	}
 
-    public void run() {
+	public void closeAll() {
 
-    }
-
-    public void closeAll(){
-
-    }
+	}
 
 }
