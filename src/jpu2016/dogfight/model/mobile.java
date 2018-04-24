@@ -1,12 +1,15 @@
 package jpu2016.dogfight.model;
 
+import java.awt.Color;
 import java.awt.Point;
 
 public class mobile implements IMobile {
 
 	private int speed;
 
+	public mobile(Direction direction, Position position, Dimension dimension, int speed, String Image) {
 
+	}
 
 	public Direction getDirection() {
 		// TODO Auto-generated method stub
@@ -15,7 +18,7 @@ public class mobile implements IMobile {
 
 	public void setDirection(Direction direction) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public Point getPosition() {
@@ -45,12 +48,12 @@ public class mobile implements IMobile {
 
 	public void move() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void placeInArena(Iarea area) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public boolean isPlayer(int player) {
@@ -71,7 +74,38 @@ public class mobile implements IMobile {
 	public DogFightModel setDogFightModel(DogFightModel dogfightmodel) {
 		return dogfightmodel;
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	public Dimension getDimension() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private void moveUp() {
+
+	}
+
+	private void moveDown() {
+
+	}
+
+	private void moveRight() {
+
+	}
+
+	private void moveLeft() {
+
+	}
+
+	public Color getColor() {
+		return null;
+
+	}
+
+	public IDogFightModel getDogFightModel() {
+		return null;
+
 	}
 
 }

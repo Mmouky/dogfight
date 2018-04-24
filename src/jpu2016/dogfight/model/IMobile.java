@@ -10,6 +10,8 @@ public interface IMobile {
 
 	public Point getPosition();
 
+	public Dimension getDimension();
+
 	public int getHeight();
 
 	public int getWidth();
@@ -23,10 +25,10 @@ public interface IMobile {
 	public void placeInArena(Iarea area);
 
 	public boolean isPlayer(int player);
-	
+
 	public DogFightModel setDogFightModel(DogFightModel dogfightmodel);
-	
+
 	public boolean hit();
-	
+
 	public boolean isWeapon();
 }
