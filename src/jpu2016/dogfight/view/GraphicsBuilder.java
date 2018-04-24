@@ -10,32 +10,31 @@ import java.awt.image.ImageObserver;
 
 public class GraphicsBuilder implements IGraphicsBuilder {
 
-    IDogFightModel iDogFightModel;
-    BufferedImage emptySky;
+	private IDogFightModel iDogFightModel;
+	private BufferedImage emptySky;
 
-    public int getGlobalWidth() {
-        return 0;
-    }
+	public GraphicsBuilder(IDogFightModel iDogFightModel) {
+		this.iDogFightModel = iDogFightModel;
+	}
 
-    public int getGlobalHeight(){
-        return 0;
-    }
+	public void applyModelToGraphic(Graphics graphics, ImageObserver observer) {
 
-    public GraphicsBuilder(IDogFightModel iDogFightModel){
+	}
 
-    }
+	private void buildEmptySky(BufferedImage emptySky) {
 
-    public void applyModelToGraphic(Graphics graphics, ImageObserver observer){
+	}
 
-    }
+	private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver observer) {
 
-    private void buildEmptySky(BufferedImage emptySky){
+	}
 
-    }
+	public int getGlobalWidth() {
+		return 1;
+	}
 
-    private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver observer){
-
-    }
-
+	public int getGlobalHeight() {
+		return 1;
+	}
 
 }
