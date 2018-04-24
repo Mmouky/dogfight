@@ -12,12 +12,12 @@ public class UserOrder implements IUserOrder{
 
 	@Override
 	public Order getOrder() {
-		return null;
+		return Order.UP;
 	}
 
 	@Override
 	public int getPlayer() {
-		return 0;
+		return 1;
 	}
 	
 	
