@@ -13,7 +13,6 @@ public class DogfightController implements IOrderPerformer {
 		this.dogfightModel = dogfightModel;
 	}
 
-	@Override
 	public void orderPerform(UserOrder userOrder) {
 
 	}

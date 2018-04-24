@@ -13,12 +13,10 @@ public class UserOrder implements IUserOrder{
 	public UserOrder() {
 	}
 
-	@Override
 	public Order getOrder() {
 		return Order.UP;
 	}
 
-	@Override
 	public int getPlayer() {
 		return 1;
 	}
