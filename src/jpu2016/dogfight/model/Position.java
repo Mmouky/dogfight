@@ -15,7 +15,10 @@ public class Position {
 	}
 
 	public Position(double x, double y, double maxX, double maxY) {
-		// TODO Auto-generated constructor stub
+		this.x = x;
+		this.y = y;
+		this.maxX = maxX;
+		this.maxY = maxY;
 	}
 
 	public Position(Position position) {

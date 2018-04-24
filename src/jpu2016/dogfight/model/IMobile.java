@@ -16,13 +16,13 @@ public interface IMobile {
 
 	public int getWidth();
 
-	public int getISpeed();
+	public int getSpeed();
 
 	public int getImage();
 
 	public void move();
 
-	public void placeInArena(Iarea area);
+	public void placeInArea(Iarea area);
 
 	public boolean isPlayer(int player);
 
