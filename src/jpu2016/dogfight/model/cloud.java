@@ -7,7 +7,7 @@ public class cloud extends mobile{
 	static private String IMAGE= "cloud";
 	
 	public cloud(Direction direction, Dimension dimension) {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }
